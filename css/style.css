@@ -31,7 +31,7 @@
   --color-primery-light: #faf4ea;
   --color-secondary-dark: #a18268;
   --color-brand-dark: #455929;
-  --color-band-normal: #819b57;
+  --color-brand-normal: #819b57;
   --color-brand-light: #cfcfbc;
 }
 
@@ -103,8 +103,8 @@ ul {
 .button {
   padding: 16px 32px;
   color: var(--color-primery-light);
-  background-color: var(--color-band-normal);
-  border: 2px solid var(--color-band-normal);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -124,7 +124,7 @@ ul {
 }
 
 .link:hover {
-  color: var(--color-band-normal);
+  color: var(--color-brand-normal);
 }
 
 /* Header */
@@ -180,13 +180,13 @@ ul {
 }
 
 .hero-title .accent {
-  color: var(--color-band-normal);
+  color: var(--color-brand-normal);
 }
 
 /* Advatages section */
 .advantages-section {
   padding: 16px 0;
-  background-color: var(--color-band-normal);
+  background-color: var(--color-brand-normal);
 }
 
 .advantages-list {
@@ -235,7 +235,7 @@ ul {
 }
 
 .traditions-text .brand {
-  color: var(--color-band-normal);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 
@@ -460,7 +460,7 @@ ul {
 }
 
 .address-link:hover {
-  color: var(--color-band-normal);
+  color: var(--color-brand-normal);
 }
 
 .address-icon {
@@ -498,12 +498,57 @@ ul {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primery-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+.form-input {
+  display: block;
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  margin-bottom: 32px;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primery-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primery-dark);
+  text-underline-offset: 2px;
 }
